@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary Meta Tags -->
+    <title>
+      English To English Dictionary - Word Definitions, Pronunciations &
+      Examples
+    </title>
+    <meta
+      name="title"
+      content="English To English Dictionary - Word Definitions, Pronunciations & Examples"
+    />
+    <meta
+      name="description"
+      content="Free online English to English dictionary with definitions, pronunciations, synonyms, antonyms, and examples. Search any English word instantly with audio pronunciation."
+    />
+    <meta
+      name="keywords"
+      content="english to english dictionary, word definitions, pronunciation, synonyms, antonyms, vocabulary, language learning, free dictionary"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="English To English Dictionary App" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://devisurusampath.github.io/English2EnglishDictionary/"
+    />
+    <meta
+      property="og:title"
+      content="English To English Dictionary - Word Definitions & Pronunciations"
+    />
+    <meta
+      property="og:description"
+      content="Free online English to English dictionary with definitions, pronunciations, synonyms, antonyms, and examples. Search any English word instantly."
+    />
+    <meta
+      property="og:image"
+      content="https://devisurusampath.github.io/English2EnglishDictionary/dictionary-preview.jpg"
+    />
+    <meta property="og:site_name" content="English To English Dictionary" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://devisurusampath.github.io/English2EnglishDictionary/"
+    />
+    <meta
+      property="twitter:title"
+      content="English To English Dictionary - Word Definitions & Pronunciations"
+    />
+    <meta
+      property="twitter:description"
+      content="Free online English to English dictionary with definitions, pronunciations, synonyms, antonyms, and examples."
+    />
+    <meta
+      property="twitter:image"
+      content="https://devisurusampath.github.io/English2EnglishDictionary/dictionary-preview.jpg"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzI1NjNlYiIvPgo8cGF0aCBkPSJNOCA4aDE2djE2SDh6IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIiByeD0iMjAiIGZpbGw9IiMyNTYzZWIiLz4KPHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgeD0iMzAiIHk9IjMwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IndoaXRlIj4KPHA+Qm9vazwvcD4KPC9zdmc+Cjwvc3ZnPgo="
+    />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://devisurusampath.github.io/English2EnglishDictionary/"
+    />
+
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Tailwind Dark Mode Configuration -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              dark: {
+                bg: "#0f172a",
+                card: "#1e293b",
+                text: "#f1f5f9",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+      .theme-transition {
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease,
+          border-color 0.3s ease;
+      }
+
+      .coffee-btn {
+        background: linear-gradient(45deg, #dc2626, #ef4444);
+        box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+      }
+
+      .coffee-btn:hover {
+        background: linear-gradient(45deg, #b91c1c, #dc2626);
+        box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+        transform: translateY(-2px);
+      }
+
+      /* Loading animation */
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+
+      .pulse {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Custom scrollbar for dark mode */
+      .dark ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .dark ::-webkit-scrollbar-track {
+        background: #1e293b;
+      }
+
+      .dark ::-webkit-scrollbar-thumb {
+        background: #475569;
+        border-radius: 4px;
+      }
+
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #64748b;
+      }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "English To English Dictionary",
+        "description": "Free online English to English dictionary with definitions, pronunciations, synonyms, and antonyms",
+        "url": "https://devisurusampath.github.io/English2EnglishDictionary",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "English To English Dictionary App"
+        }
+      }
+    </script>
+  </head>
+  <body
+    class="theme-transition bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-900 dark:to-slate-800 min-h-screen"
+  >
+    <!-- Skip to main content for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-blue-600 text-white px-4 py-2 rounded"
+      >Skip to main content</a
+    >
+
+    <div class="container mx-auto px-4 py-8">
+      <!-- Header with Theme Toggle -->
+      <header class="text-center mb-8 relative">
+        <!-- Theme Toggle Button -->
+        <button
+          id="themeToggle"
+          class="absolute top-0 right-0 p-3 rounded-full bg-white dark:bg-slate-700 shadow-lg hover:shadow-xl transition-all duration-300 group"
+          aria-label="Toggle dark mode"
+        >
+          <i
+            id="themeIcon"
+            class="fas fa-moon text-slate-600 dark:text-yellow-400 text-xl group-hover:scale-110 transition-transform duration-300"
+          ></i>
+        </button>
+
+        <h1
+          class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-slate-100 mb-2"
+        >
+          <i class="fas fa-book text-blue-600 dark:text-blue-400 mr-3"></i>
+          English To English Dictionary
+        </h1>
+        <p class="text-gray-600 dark:text-slate-300 text-lg">
+          Discover meanings, pronunciations, and examples for any English word
+        </p>
+
+        <!-- Buy Me a Coffee Button -->
+        <div class="mt-6">
+          <a
+            href="https://www.buymeacoffee.com/devisurusampath"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="coffee-btn inline-flex items-center gap-3 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+            aria-label="Support this project - Buy me a coffee"
+          >
+            <i class="fas fa-coffee text-xl"></i>
+            <span>Buy Me a Coffee</span>
+            <i class="fas fa-heart text-sm animate-pulse"></i>
+          </a>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main id="main-content">
+        <!-- Search Section -->
+        <section class="max-w-2xl mx-auto mb-8" role="search">
+          <div
+            class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 theme-transition"
+          >
+            <label for="wordInput" class="sr-only">Enter word to search</label>
+            <div class="flex gap-4">
+              <input
+                type="text"
+                id="wordInput"
+                placeholder="Enter a word to search... (e.g., 'serendipity')"
+                class="flex-1 px-4 py-3 border border-gray-300 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-100 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-lg theme-transition"
+                onkeypress="handleKeyPress(event)"
+                autocomplete="off"
+                spellcheck="false"
+              />
+              <button
+                onclick="searchWord()"
+                id="searchBtn"
+                class="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center gap-2 hover:scale-105"
+                aria-label="Search for word definition"
+              >
+                <i class="fas fa-search"></i>
+                <span class="hidden sm:inline">Search</span>
+              </button>
+            </div>
+
+            <!-- Quick Search Suggestions -->
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="text-sm text-gray-600 dark:text-slate-400"
+                >Try:</span
+              >
+              <button
+                onclick="quickSearch('serendipity')"
+                class="text-sm bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-slate-300 px-3 py-1 rounded-full hover:bg-gray-200 dark:hover:bg-slate-600 transition-colors"
+              >
+                serendipity
+              </button>
+              <button
+                onclick="quickSearch('ephemeral')"
+                class="text-sm bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-slate-300 px-3 py-1 rounded-full hover:bg-gray-200 dark:hover:bg-slate-600 transition-colors"
+              >
+                ephemeral
+              </button>
+              <button
+                onclick="quickSearch('ubiquitous')"
+                class="text-sm bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-slate-300 px-3 py-1 rounded-full hover:bg-gray-200 dark:hover:bg-slate-600 transition-colors"
+              >
+                ubiquitous
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Loading Spinner -->
+        <div
+          id="loading"
+          class="hidden text-center mb-8"
+          role="status"
+          aria-live="polite"
+        >
+          <div
+            class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-blue-200 border-t-blue-600 dark:border-slate-600 dark:border-t-blue-400"
+          ></div>
+          <p class="text-gray-600 dark:text-slate-400 mt-3 text-lg">
+            Searching dictionary...
+          </p>
+        </div>
+
+        <!-- Results Section -->
+        <section
+          id="results"
+          class="max-w-4xl mx-auto"
+          role="region"
+          aria-live="polite"
+          aria-label="Search results"
+        >
+          <!-- Initial welcome message -->
+          <div
+            class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 text-center theme-transition"
+          >
+            <i
+              class="fas fa-search text-6xl text-blue-200 dark:text-slate-600 mb-4"
+            ></i>
+            <h2
+              class="text-2xl font-semibold text-gray-800 dark:text-slate-200 mb-2"
+            >
+              Ready to Explore Words?
+            </h2>
+            <p class="text-gray-600 dark:text-slate-400">
+              Enter any English word above to discover its meaning,
+              pronunciation, and usage examples.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="mt-16 text-center text-gray-600 dark:text-slate-400 border-t border-gray-200 dark:border-slate-700 pt-8"
+      >
+        <div class="max-w-4xl mx-auto">
+          <p class="mb-4">
+            <i class="fas fa-heart text-red-500 mr-1"></i>
+            Made with love for language learners worldwide
+          </p>
+          <div class="flex justify-center items-center gap-6 text-sm">
+            <span>© 2025 English To English Dictionary</span>
+            <span>•</span>
+            <a
+              href="#"
+              class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >Privacy Policy</a
+            >
+            <span>•</span>
+            <a
+              href="#"
+              class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >Terms of Service</a
+            >
+          </div>
+          <p class="mt-4 text-xs">
+            Powered by
+            <a
+              href="https://dictionaryapi.dev"
+              target="_blank"
+              rel="noopener"
+              class="text-blue-600 dark:text-blue-400 hover:underline"
+              >Free Dictionary API</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Theme Management
+      const themeToggle = document.getElementById("themeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+      const html = document.documentElement;
+
+      // Check for saved theme preference or default to 'light'
+      const savedTheme = localStorage.getItem("theme") || "light";
+
+      // Apply saved theme on page load
+      if (savedTheme === "dark") {
+        html.classList.add("dark");
+        themeIcon.className =
+          "fas fa-sun text-slate-600 dark:text-yellow-400 text-xl group-hover:scale-110 transition-transform duration-300";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        const isDark = html.classList.contains("dark");
+
+        if (isDark) {
+          html.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+          themeIcon.className =
+            "fas fa-moon text-slate-600 dark:text-yellow-400 text-xl group-hover:scale-110 transition-transform duration-300";
+        } else {
+          html.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+          themeIcon.className =
+            "fas fa-sun text-slate-600 dark:text-yellow-400 text-xl group-hover:scale-110 transition-transform duration-300";
+        }
+      });
+
+      // Search Functionality
+      function handleKeyPress(event) {
+        if (event.key === "Enter") {
+          searchWord();
+        }
+      }
+
+      function quickSearch(word) {
+        document.getElementById("wordInput").value = word;
+        searchWord();
+      }
+
+      async function searchWord() {
+        const word = document.getElementById("wordInput").value.trim();
+        const loading = document.getElementById("loading");
+        const results = document.getElementById("results");
+        const searchBtn = document.getElementById("searchBtn");
+
+        if (!word) {
+          showNotification("Please enter a word to search", "warning");
+          return;
+        }
+
+        // Show loading state
+        loading.classList.remove("hidden");
+        results.innerHTML = "";
+        searchBtn.disabled = true;
+        searchBtn.innerHTML =
+          '<i class="fas fa-spinner fa-spin"></i> <span class="hidden sm:inline">Searching...</span>';
+
+        try {
+          // Direct API call to Dictionary API
+          const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`;
+          const response = await fetch(apiUrl);
+
+          if (response.ok) {
+            const data = await response.json();
+            displayResults(data);
+
+            // Update page title for SEO
+            document.title = `${word.charAt(0).toUpperCase() + word.slice(1)} - Definition | English To English Dictionary`;
+          } else {
+            const errorData = await response.json();
+            displayError({
+              title: errorData.title || "Word not found",
+              message:
+                errorData.message || "No definitions found for this word",
+              resolution:
+                errorData.resolution ||
+                "Please try searching for another word or check the spelling",
+            });
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          displayError({
+            title: "Network Error",
+            message:
+              "Failed to fetch data. Please check your internet connection and try again.",
+            resolution: "Make sure you have an active internet connection",
+          });
+        } finally {
+          loading.classList.add("hidden");
+          searchBtn.disabled = false;
+          searchBtn.innerHTML =
+            '<i class="fas fa-search"></i> <span class="hidden sm:inline">Search</span>';
+        }
+      }
+
+      function displayResults(data) {
+        const results = document.getElementById("results");
+        let html = "";
+
+        data.forEach((entry, index) => {
+          html += `
+                    <article class="bg-white dark:bg-slate-800 rounded-xl shadow-lg mb-6 overflow-hidden theme-transition">
+                        <header class="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-500 dark:to-indigo-500 text-white p-6">
+                            <div class="flex items-center justify-between flex-wrap gap-4">
+                                <div>
+                                    <h1 class="text-3xl md:text-4xl font-bold capitalize">${entry.word}</h1>
+                                    ${entry.phonetic ? `<p class="text-blue-100 text-lg mt-1" aria-label="Pronunciation">${entry.phonetic}</p>` : ""}
+                                </div>
+                                ${getAudioButton(entry.phonetics)}
+                            </div>
+                        </header>
+                        
+                        <div class="p-6">
+                            ${entry.meanings
+                              .map(
+                                (meaning) => `
+                                <section class="mb-6 last:mb-0">
+                                    <h2 class="text-xl font-semibold text-gray-800 dark:text-slate-200 mb-3 flex items-center">
+                                        <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium mr-3">
+                                            ${meaning.partOfSpeech}
+                                        </span>
+                                    </h2>
+                                    
+                                    <div class="space-y-4">
+                                        ${meaning.definitions
+                                          .map(
+                                            (def, defIndex) => `
+                                            <div class="border-l-4 border-blue-200 dark:border-blue-700 pl-4">
+                                                <p class="text-gray-700 dark:text-slate-300 mb-2 leading-relaxed">
+                                                    <span class="font-medium text-gray-900 dark:text-slate-100">${defIndex + 1}.</span> ${def.definition}
+                                                </p>
+                                                ${def.example ? `<p class="text-gray-600 dark:text-slate-400 italic text-sm bg-gray-50 dark:bg-slate-700 p-2 rounded">💭 Example: "${def.example}"</p>` : ""}
+                                                ${
+                                                  def.synonyms &&
+                                                  def.synonyms.length > 0
+                                                    ? `
+                                                    <div class="mt-2">
+                                                        <span class="text-sm font-medium text-green-700 dark:text-green-400">📚 Synonyms: </span>
+                                                        <span class="text-sm text-green-600 dark:text-green-300">${def.synonyms.join(", ")}</span>
+                                                    </div>
+                                                `
+                                                    : ""
+                                                }
+                                                ${
+                                                  def.antonyms &&
+                                                  def.antonyms.length > 0
+                                                    ? `
+                                                    <div class="mt-1">
+                                                        <span class="text-sm font-medium text-red-700 dark:text-red-400">🔄 Antonyms: </span>
+                                                        <span class="text-sm text-red-600 dark:text-red-300">${def.antonyms.join(", ")}</span>
+                                                    </div>
+                                                `
+                                                    : ""
+                                                }
+                                            </div>
+                                        `,
+                                          )
+                                          .join("")}
+                                    </div>
+                                </section>
+                            `,
+                              )
+                              .join("")}
+                            
+                            ${
+                              entry.sourceUrls && entry.sourceUrls.length > 0
+                                ? `
+                                <footer class="mt-6 pt-4 border-t border-gray-200 dark:border-slate-600">
+                                    <p class="text-sm text-gray-600 dark:text-slate-400">
+                                        <i class="fas fa-external-link-alt mr-1"></i>
+                                        Source: <a href="${entry.sourceUrls[0]}" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">${new URL(entry.sourceUrls[0]).hostname}</a>
+                                    </p>
+                                </footer>
+                            `
+                                : ""
+                            }
+                        </div>
+                    </article>
+                `;
+        });
+
+        results.innerHTML = html;
+        results.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      function getAudioButton(phonetics) {
+        if (!phonetics) return "";
+
+        const audioPhonetic = phonetics.find(
+          (p) => p.audio && p.audio.trim() !== "",
+        );
+        if (!audioPhonetic) return "";
+
+        return `
+                <button 
+                    onclick="playAudio('${audioPhonetic.audio}')" 
+                    class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 hover:scale-105"
+                    aria-label="Play pronunciation"
+                >
+                    <i class="fas fa-volume-up"></i>
+                    <span class="hidden sm:inline">Play</span>
+                </button>
+            `;
+      }
+
+      function playAudio(audioUrl) {
+        if (audioUrl) {
+          const audio = new Audio(audioUrl);
+          audio.play().catch((error) => {
+            console.error("Error playing audio:", error);
+            showNotification("Could not play audio pronunciation", "error");
+          });
+        }
+      }
+
+      function displayError(error) {
+        const results = document.getElementById("results");
+        results.innerHTML = `
+                <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-6 text-center theme-transition">
+                    <div class="text-red-600 dark:text-red-400 mb-4">
+                        <i class="fas fa-exclamation-triangle text-4xl"></i>
+                    </div>
+                    <h2 class="text-xl font-semibold text-red-800 dark:text-red-300 mb-2">${error.title || "Word not found"}</h2>
+                    <p class="text-red-700 dark:text-red-400 mb-4">${error.message || "No definitions were found for this word."}</p>
+                    <p class="text-red-600 dark:text-red-500 text-sm">${error.resolution || "Please try searching for another word or check the spelling."}</p>
+                    
+                    <div class="mt-6 pt-4 border-t border-red-200 dark:border-red-800">
+                        <h3 class="text-red-800 dark:text-red-300 font-medium mb-2">Suggestions:</h3>
+                        <div class="flex flex-wrap justify-center gap-2">
+                            <button onclick="quickSearch('dictionary')" class="bg-red-100 dark:bg-red-800 text-red-700 dark:text-red-200 px-3 py-1 rounded-full text-sm hover:bg-red-200 dark:hover:bg-red-700 transition-colors">dictionary</button>
+                            <button onclick="quickSearch('vocabulary')" class="bg-red-100 dark:bg-red-800 text-red-700 dark:text-red-200 px-3 py-1 rounded-full text-sm hover:bg-red-200 dark:hover:bg-red-700 transition-colors">vocabulary</button>
+                            <button onclick="quickSearch('language')" class="bg-red-100 dark:bg-red-800 text-red-700 dark:text-red-200 px-3 py-1 rounded-full text-sm hover:bg-red-200 dark:hover:bg-red-700 transition-colors">language</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+      }
+
+      function showNotification(message, type = "info") {
+        const notification = document.createElement("div");
+        const colors = {
+          info: "bg-blue-500",
+          warning: "bg-yellow-500",
+          error: "bg-red-500",
+          success: "bg-green-500",
+        };
+
+        notification.className = `fixed top-4 right-4 ${colors[type]} text-white px-6 py-3 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300`;
+        notification.innerHTML = `
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-${type === "error" ? "exclamation-circle" : type === "warning" ? "exclamation-triangle" : type === "success" ? "check-circle" : "info-circle"}"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+
+        document.body.appendChild(notification);
+
+        // Animate in
+        setTimeout(() => {
+          notification.classList.remove("translate-x-full");
+        }, 100);
+
+        // Remove after 3 seconds
+        setTimeout(() => {
+          notification.classList.add("translate-x-full");
+          setTimeout(() => notification.remove(), 300);
+        }, 3000);
+      }
+
+      // Focus on input when page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("wordInput").focus();
+
+        // Add some sample searches for better UX
+        const searchInput = document.getElementById("wordInput");
+        const placeholders = [
+          "serendipity",
+          "ephemeral",
+          "ubiquitous",
+          "mellifluous",
+          "petrichor",
+          "wanderlust",
+          "solitude",
+          "resilience",
+        ];
+
+        let placeholderIndex = 0;
+        setInterval(() => {
+          if (searchInput.value === "") {
+            searchInput.placeholder = `Try searching for "${placeholders[placeholderIndex]}"...`;
+            placeholderIndex = (placeholderIndex + 1) % placeholders.length;
+          }
+        }, 3000);
+      });
+
+      // Add keyboard shortcuts
+      document.addEventListener("keydown", function (e) {
+        // Ctrl/Cmd + K to focus search
+        if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+          e.preventDefault();
+          document.getElementById("wordInput").focus();
+        }
+
+        // Ctrl/Cmd + D to toggle dark mode
+        if ((e.ctrlKey || e.metaKey) && e.key === "d") {
+          e.preventDefault();
+          themeToggle.click();
+        }
+      });
+
+      // Service Worker for offline functionality (optional)
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          // You can register a service worker here for offline functionality
+          console.log("Dictionary app loaded successfully!");
+        });
+      }
+    </script>
+  </body>
+</html>
